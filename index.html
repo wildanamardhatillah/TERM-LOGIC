@@ -3,14 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TERM-LOGIC</title>
+    <title>Sistem Terintegrasi</title>
+    <style>
+        /* Menghilangkan margin dan padding bawaan browser */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Memastikan elemen induk memenuhi 100% layar */
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Menghilangkan scrollbar ganda */
+            background-color: #f4f6f9;
+        }
+
+        /* Mengatur iframe memenuhi seluruh area layar */
+        .fullscreen-iframe {
+            width: 100%;
+            height: 100vh; /* 100% Viewport Height */
+            border: none;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe 
-            src="https://script.google.com/macros/s/AKfycbzkdhUi2YrpR4g8jeu4UVA05ygRa4l34MxcPolaLU4Iw8m-L6YQ-8DNeyl-uB39Hvu_/exec" 
-            allowfullscreen>
-        </iframe>
-    </div>
+
+    <iframe 
+        class="fullscreen-iframe" 
+        src="https://script.google.com/macros/s/AKfycbzkdhUi2YrpR4g8jeu4UVA05ygRa4l34MxcPolaLU4Iw8m-L6YQ-8DNeyl-uB39Hvu_/exec"
+        allow="geolocation; microphone; camera; encrypted-media;"
+        allowfullscreen>
+    </iframe>
+
 </body>
 </html>
